@@ -1,2 +1,22 @@
-# qa-automation-showcase
-Practice showcase of automated tests using real B2C service scenarios.
+## 커밋 메시지 작성 규칙
+> 이 레포지토리에서는 다음과 같은 형식으로 커밋 메시지를 작성합니다 <br>
+> <타입>: 메시지
+
+### 주요 커밋 타입
+| 타입 | 설명 | 예시 |
+|---|---|---|
+| `test` | 테스트 코드 작성 또는 수정 | `test: 로그인 시나리오 추가` |
+| `fix` | 테스트 코드 오류 수정 | `fix: 디바이스 설정 오류 수정` |
+| `docs` | 문서, README, 주석 등 텍스트 수정 | `docs: 실행 방법 업데이트` |
+| `chore` | 환경설정, 의존성 관리 등 기타 작업  | `chore: .gitignore 업데이트`  |
+| `refactor` | 리팩토링 (동작 변화 없이 코드 개선)  | `refactor: 코드 구조 정리` |
+| `ci` | GitHub Actions 등 CI 설정 관련 변경 | `ci: 자동 테스트를 위한 워크플로 추가` |
+
+### 커밋 메시지 작성 팁
+- 50자 이내로 간결하게
+- 구현한 동작을 설명
+- 기능별로 커밋을 분리 (테스트 추가와 문서 수정은 따로)
+
+> 예시:
+> - `test: 라이브 채팅 E2E 시나리오 추가`
+> - `docs: 공통 README 파일 수정`

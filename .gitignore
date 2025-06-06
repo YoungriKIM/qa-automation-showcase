@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+
+# VSCode 설정
+.vscode/
+
+# Appium
+*.log
+*.apk
+
+# Allure
+allure-results/
+allure-report/
+
+# OS 파일
+.DS_Store
+Thumbs.db
