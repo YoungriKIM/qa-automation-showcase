@@ -24,3 +24,6 @@ allure-report/
 # OS 파일
 .DS_Store
 Thumbs.db
+
+# 메모 파일
+memo
