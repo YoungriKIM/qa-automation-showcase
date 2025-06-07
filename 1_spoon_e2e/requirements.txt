@@ -1,4 +1,4 @@
-Appium-Python-Client
-selenium
+appium-python-client==2.11.1
 pytest
+selenium
 allure-pytest

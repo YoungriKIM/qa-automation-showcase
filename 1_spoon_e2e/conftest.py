@@ -11,7 +11,7 @@ from appium.options.android import UiAutomator2Options
 def driver():
     options = UiAutomator2Options().load_capabilities({
         "platformName": "Android",
-        "deviceName": "emulator-5554",  # ADB에서 보이는 이름을 지정해야 함
+        "deviceName": "emulator-5554",  # ADB에서 보이는 이름을 지정
         "appPackage": "co.spoonme",     # 사용하는 APK에 맞게
         "appActivity": "co.spoonme.ui.main.MainActivity",
         "noReset": True # 앱 초기화 여부를 결정
