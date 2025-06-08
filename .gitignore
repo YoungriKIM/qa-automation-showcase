@@ -27,3 +27,7 @@ Thumbs.db
 
 # 메모 파일
 memo
+
+# 영상 원본, 정제
+assets/origin/
+assets/video_trim.ipynb

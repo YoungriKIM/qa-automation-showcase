@@ -1,30 +1,37 @@
 # QA Automation Showcase
 
 자동화 테스트 실습 프로젝트입니다.  
-Appium + Pytest 기반으로, 모바일 앱의 기능 및 시나리오 테스트를 구성하였습니다.
+Appium + Pytest 기반으로, 모바일 앱의 기능과 시나리오 테스트를 구성하였습니다.
+1. 스푼라디오 E2E 테스트
+2. 당근마켓 기능 테스트
 
 ---
 
 
-## 커밋 메시지 작성 규칙
-> 이 레포지토리에서는 다음과 같은 형식으로 커밋 메시지를 작성합니다 <br>
-> <타입>: 메시지
+### 📁 폴더 구조
 
-### 주요 커밋 타입
-| 타입 | 설명 | 예시 |
-|---|---|---|
-| `test` | 테스트 코드 작성 또는 수정 | `test: 로그인 시나리오 추가` |
-| `fix` | 테스트 코드 오류 수정 | `fix: 디바이스 설정 오류 수정` |
-| `docs` | 문서, README, 주석 등 텍스트 수정 | `docs: 실행 방법 업데이트` |
-| `chore` | 환경설정, 의존성 관리 등 기타 작업  | `chore: .gitignore 업데이트`  |
-| `refactor` | 리팩토링 (동작 변화 없이 코드 개선)  | `refactor: 코드 구조 정리` |
-| `ci` | GitHub Actions 등 CI 설정 관련 변경 | `ci: 자동 테스트를 위한 워크플로 추가` |
+````
+qa-automation-showcase/
+├── 1_spoon_e2e/ # 스푼라디오 E2E 테스트
+├── 2_carrot_functional/ # 당근마켓 기능 테스트
+└── assets/ # 시연 영상
+````
 
-### 커밋 메시지 작성 팁
-- 50자 이내로 간결하게
-- 구현한 동작을 설명
-- 기능별로 커밋을 분리 (테스트 추가와 문서 수정은 따로)
+### ✅ 실행 환경 정보
 
-> 예시:
-> - `test: 라이브 채팅 E2E 시나리오 추가`
-> - `docs: 공통 README 파일 수정`
+- 운영체제: Windows 10
+- Python: 3.11.13
+- Java JDK: 1.8.0_202
+- Node.js: 18.15.0
+- npm: 9.5.0
+- Appium: 2.19.0
+- ADB (Android Debug Bridge): 1.0.41 (v35.0.2-12147458)
+- Android SDK: 설치 후 환경변수 `ANDROID_HOME` 설정 필요
+- Android Emulator or Device: Android API Level 30 이상 권장
+- 테스트 대상 APK
+  - 앱 이름: Spoon: Live Audio & Podcasts
+  - 버전: v10.1.0
+  - 패키지명: `co.spoonme`
+  - 출처: [APKPure](https://apkpure.com)에서 다운로드(⚠️APK 파일 자체는 저장소에 포함되어 있지 않습니다.)
+- 기타 도구:
+  - `allure-pytest`: 테스트 리포트 생성
