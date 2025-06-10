@@ -1,6 +1,10 @@
 # 스푼라디오 E2E 테스트
 
-[▶ 시연 영상 보기](assets/spoon_e2e.mp4)
+[▶ 시연 영상 보기](https://youtu.be/eCFZxZh4KGQ)
+
+[![시연 영상 썸네일](https://img.youtube.com/vi/eCFZxZh4KGQ/0.jpg)](https://youtu.be/eCFZxZh4KGQ)
+
+
 
 이 테스트는 스푼라디오 앱에서 실사용자들이 가장 자주 사용하는 주요 기능인 아래 세 가지의 동작을 자동화로 검증합니다.
 - 라이브 콘텐츠 진입
