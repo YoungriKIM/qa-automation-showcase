@@ -25,9 +25,12 @@ allure-report/
 .DS_Store
 Thumbs.db
 
-# 메모 파일
+# 메모
 memo
 
 # 영상 원본, 정제
 assets/origin/
 assets/video_trim.ipynb
+
+# 노트북 파일
+2_coupang_functional/tests/00.ipynb

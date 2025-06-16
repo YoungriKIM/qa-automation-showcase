@@ -4,16 +4,15 @@
 
 [![시연 영상 썸네일](https://img.youtube.com/vi/eCFZxZh4KGQ/0.jpg)](https://youtu.be/eCFZxZh4KGQ)
 
-
-
-이 테스트는 스푼라디오 앱에서 실사용자들이 가장 자주 사용하는 주요 기능인 아래 세 가지의 동작을 자동화로 검증합니다.
+이 테스트는 스푼라디오 앱에서 실사용자가 가장 자주 사용하는 핵심 기능 3가지를 자동화 테스트로 검증하였습니다.
 - 라이브 콘텐츠 진입
 - 채팅 전송
 - 좋아요 기능
 
-<br>
+<br><br>
 
 ---
+<br><br>
 
 ### 테스트 흐름
 
@@ -26,36 +25,45 @@
 | 5 | 좋아요 버튼 활성화 대기 | 실시간 기능 대기 |
 | 6 | 좋아요 클릭 | 인터랙션 동작 확인 |
 | 7 | 좋아요 수 증가 확인 | 동작 검증|
-
+<br><br>
 
 ### 주요 기술 스택
-- Appium + Python
-- Pytest
-- Page Object Pattern
-- Allure 리포트
-
+- Appium + Python : Android 앱 자동화
+- Pytest : 테스트 프레임워크
+- Page Object Pattern : 유지보수를 고려한 테스트 구조
+- Allure Report : 시각적 리포트 및 테스트 기록
+<br><br>
 
 ### 실행 방법
-1. Android 에뮬레이터 또는 실제 디바이스 실행
-2. 아래 배치 파일 실행
-    ```bash
-    run_allure.bat
-    ````
+1. 사전 준비
+     - Android 에뮬레이터 실행
+     - Appium 서버 실행
+     - 스푼라디오 APK 설치 (공식 앱스토어 또는 테스트용 APK 사용)
+     - 테스트용 계정 로그인
+
+2. 테스트 실행
+     - 아래 배치 파일 실행
+       ```bash
+       # Windows 환경에서 실행
+       run_allure.bat
+       ```
+<br><br>
 
 ### 테스트 리포트 요약
 테스트는 정상적으로 통과되었으며, 전체 흐름은 다음과 같이 검증되었습니다.
 
 ![테스트 리포트 요약](../assets/spoon_e2e.JPG)
-
----
+<br><br>
 
 ### 📁 폴더 구조
-
 ````
 qa-automation-showcase/
 └── 1_spoon_e2e/ # 스푼라디오 E2E 테스트
-  ├── tests/ # 테스트 스크립트
   ├── pages/ # 유틸, Page Object 정의
+  ├── tests/ # 테스트 스크립트
   ├── conftest.py # Pytest 설정
-  └── requirements.txt # 의존성 패키지
+  ├── requirements.txt # 의존성 패키지
+  └── run_allure.bat # 실행 배치 파일
+
 ````
+<br><br>
